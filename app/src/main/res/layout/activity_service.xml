@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+ >
+    <Button
+        android:text="Service"
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="intservice"
+        android:id="@+id/intservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Jobintservice"
+        android:id="@+id/jobintservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Bind service start"
+        android:id="@+id/bindservicest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Bind service stop"
+        android:id="@+id/bindservicestop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Bind service getdata"
+        android:id="@+id/bindserviceget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="AIDL"
+        android:id="@+id/aidlservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

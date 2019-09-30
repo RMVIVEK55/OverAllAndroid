@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.payment.pay">
+<EditText
+    android:id="@+id/pay"
+    android:maxLength="5"
+    android:hint="10/20"
+
+    android:digits="1234567890/"
+    android:inputType="number"
+    android:imeOptions="actionNext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.delete.fulleventbus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.launch.ActivityE"></activity>
+        <activity
+            android:name="com.launch.ActivityD"
+            android:launchMode="singleTask"
+            />
+        <activity android:name="com.launch.ActivityC" />
+        <activity android:name="com.launch.ActivityB" />
+        <activity android:name="com.launch.ActivityA">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bgTimer.BgTimer2" />
+        <activity android:name="com.bgTimer.BgTimerMain"></activity>
+        <activity android:name="com.map.MapActivity" />
+        <activity android:name="com.pendingIntent.PendingActivty" />
+        <activity android:name="com.broadcast.BroadCastActivity" />
+        <activity android:name="com.background.ServiceActivity" />
+        <activity android:name="com.room.RoomActivity" />
+        <activity android:name="com.payment.pay" />
+        <activity android:name="com.jobSchedule.JobSchedule" />
+        <activity android:name="com.delete.sharedPreference.Shared2" />
+        <activity android:name="com.delete.sharedPreference.Shared1" />
+        <activity android:name="com.delete.sqlite.sqliteViewActivity" />
+        <activity android:name=".MainActivity" /> <!-- SERVOICE -->
+        <service
+            android:name="com.jobSchedule.ServiceClass"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name="com.room.ser" />
+        <service
+            android:name="com.background.BindService"
+            android:exported="false" />
+        <service
+            android:name="com.background.Service"
+            android:exported="false" />
+        <service
+            android:name="com.background.IntentService"
+            android:exported="false" />
+        <service
+            android:name="com.background.JobIntSErvice"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name="com.background.AidlService" />
+        <service android:name="com.pendingIntent.Notifi" />
+        <service android:name="com.bgTimer.BgTimerService" /> <!-- broadcast -->
+        <!-- <receiver android:name="com.broadcast.broadcs"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED"/> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name="com.broadcast.broadcs1" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter android:priority="2"> -->
+        <!-- <action android:name="com.vivek" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name="com.broadcast.broadcs2" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter android:priority="1"> -->
+        <!-- <action android:name="com.vivek" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCzMOKVhvMlyc38HNqAhwDcduPFjnb9jFU" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name="com.bgTimer.BgTimerService" />
+    </application>
+
+</manifest>
